@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendances",
+  "info": {
+    "singularName": "attendance",
+    "pluralName": "attendances",
+    "displayName": "Attendance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timestamp": {
+      "type": "date"
+    },
+    "attended": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::male.male",
+      "inversedBy": "attendances"
+    }
+  }
+}

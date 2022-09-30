@@ -8,7 +8,7 @@ exports.default = ({ env }) => ({
     connection: {
         client: 'sqlite',
         connection: {
-            filename: path_1.default.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+            filename: path_1.default.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data-dev.db')),
         },
         useNullAsDefault: true,
     },
